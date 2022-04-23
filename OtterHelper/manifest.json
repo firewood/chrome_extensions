@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "Otter Helper",
+    "description": "Otter Helper",
+    "version": "1.0",
+    "icons": {
+        "48": "volume.png"
+    },
+    "content_scripts": [{
+        "matches": ["https://otter.ai/*"],
+        "js": ["content_scripts.js"]
+    }],
+    "background": {
+    },
+    "browser_action": {
+    },
+    "permissions": [
+        "activeTab"
+    ]
+}
