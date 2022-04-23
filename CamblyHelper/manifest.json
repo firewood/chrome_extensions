@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "Cambly Helper",
+    "description": "Cambly Helper",
+    "version": "1.0",
+    "icons": {
+        "48": "cambly.png"
+    },
+    "content_scripts": [{
+        "matches": ["https://www.cambly.com/en/student*"],
+        "js": ["content_scripts.js"]
+    }],
+    "background": {
+    },
+    "browser_action": {
+    },
+    "permissions": [
+        "activeTab"
+    ]
+}
